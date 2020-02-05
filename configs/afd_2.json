@@ -1,0 +1,29 @@
+{
+    "Estados": ["q0","q1"],
+    "Alfabeto": ["0","1"],
+    "Transiciones": [
+        {
+            "prev_state":"q0",
+            "value":"0",
+            "next_state":"q1"
+        },
+        {
+            "prev_state":"q0",
+            "value":"1",
+            "next_state":"q0"
+        },
+        {
+            "prev_state":"q1",
+            "value":"0",
+            "next_state":"q0"
+        },
+        {
+            "prev_state":"q1",
+            "value":"1",
+            "next_state":"q1"
+        }
+    ],
+    "Estado_Inicial": "q0",
+    "Estados_Aceptacion": ["q0"],
+    "Nombre": "#Par de 0´s"
+}
