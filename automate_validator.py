@@ -24,7 +24,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
     def openFileNameDialog(self):
         options = QFileDialog.Options()
-        #options |= QFileDialog.Use
         fname, _ = QFileDialog.getOpenFileName(self,"Abrir configuracion", "","Config Files (*.json)")
         if fname:
             f = open(fname, "r")
@@ -39,6 +38,8 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 self.loadDataInLabels(fname)
                 self.btnValidate.setEnabled(True)
                 self.txtInput.setEnabled(True)
+        else:
+            pass
 
     def loadDataInLabels(self, fileName):
         self.lblConfig_File_Name.setText(fileName)
