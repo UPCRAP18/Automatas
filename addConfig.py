@@ -160,9 +160,7 @@ class SaveConfig(QtWidgets.QMainWindow, Ui_SaveWindow):
             file.close()
         except:
             self.showWarningDialog("Ha ocurrido un error al guardar los datos")
-        
-
-    
+           
     def showWarningDialog(self, message):
         msg = QMessageBox()
         msg.setIcon(QMessageBox.Warning)
@@ -170,4 +168,3 @@ class SaveConfig(QtWidgets.QMainWindow, Ui_SaveWindow):
         msg.setWindowTitle("¡Advertencia!")
         msg.setStandardButtons(QMessageBox.Ok)
         msg.exec_()
-
