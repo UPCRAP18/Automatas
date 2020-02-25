@@ -1,11 +1,16 @@
 from mainwindow import *
-#from saveconfig import *
+from saveconfig import *
 from addConfig import *
 from PyQt5.QtWidgets import QFileDialog
 from PyQt5.QtCore import *
 import sys
 import json
 from os.path import isfile, join
+#### INSTITUTO POLITECNICO NACIONAL ####
+#### ESCUELA SUPERIOR DE COMPUTO ####
+#### ALVAREZ PEREZ RODRIGO ####
+#### Teoria Computacional ####
+#### Ejecutor de AFD y Conversion de AFN a AFD ####
 
 class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
     estados, alfabeto, trans, init_state, acept_states, data, nombre_config = [], [], [], "", [], [], ""

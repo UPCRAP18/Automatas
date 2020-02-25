@@ -1,39 +1,31 @@
 {
-    "Estados": ["q0","q1","q2"],
-    "Alfabeto": ["0","1"],
+    "Nombre": "Indeterminado",
+    "Estados": [ "q0", "q1"],
+    "Alfabeto": [ "0", "1" ],
+    "Estado_Inicial": "q0",
+    "Estados_Aceptacion": [
+        "q0"
+    ],
     "Transiciones": [
         {
-            "prev_state":"q0",
-            "value":"0",
-            "next_state":["q0","q1"]
+            "prev_state": "q0",
+            "value": "0",
+            "next_state": ["q0","q1"]
         },
         {
-            "prev_state":"q0",
-            "value":"1",
-            "next_state":["q0"]
+            "prev_state": "q0",
+            "value": "1",
+            "next_state": ["q0"]
         },
         {
-            "prev_state":"q1",
-            "value":"0",
-            "next_state":[]
+            "prev_state": "q1",
+            "value": "0",
+            "next_state": ["q1"]
         },
         {
-            "prev_state":"q1",
-            "value":"1",
-            "next_state":["q2"]
-        },
-        {
-            "prev_state":"q2",
-            "value":"0",
-            "next_state":[]
-        },
-        {
-            "prev_state":"q2",
-            "value":"1",
-            "next_state":[]
+            "prev_state": "q1",
+            "value": "1",
+            "next_state": ["q1","q0"]
         }
-    ],
-    "Estado_Inicial": "q0",
-    "Estados_Aceptacion": ["q2"],
-    "Nombre": "Cadenas terminadas en 01"
+    ]
 }

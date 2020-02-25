@@ -1,59 +1,59 @@
 {
-    "Estados": ["q0","q1","q2","q3","q4"],
-    "Alfabeto": ["0","1"],
+    "Nombre": "Indeterminado 2",
+    "Estados": [ "q0", "q1", "q2", "q3", "q4"],
+    "Alfabeto": [ "0", "1" ],
+    "Estado_Inicial": "q0",
+    "Estados_Aceptacion": [ "q3", "q4" ],
     "Transiciones": [
         {
-            "prev_state":"q0",
-            "value":"0",
-            "next_state":["q0","q1"]
+            "prev_state": "q0",
+            "value": "0",
+            "next_state": ["q0","q1"]
         },
         {
-            "prev_state":"q0",
-            "value":"1",
-            "next_state":["q0"]
+            "prev_state": "q0",
+            "value": "1",
+            "next_state": ["q0"]
         },
         {
-            "prev_state":"q1",
-            "value":"0",
-            "next_state":["q2","q3"]
+            "prev_state": "q1",
+            "value": "0",
+            "next_state": ["q2", "q3"]
         },
         {
-            "prev_state":"q1",
-            "value":"1",
-            "next_state":["q4"]
+            "prev_state": "q1",
+            "value": "1",
+            "next_state": ["q4"]
         },
         {
-            "prev_state":"q2",
-            "value":"0",
-            "next_state":["q0", "q2"]
+            "prev_state": "q2",
+            "value": "0",
+            "next_state": ["q0", "q2"]
         },
         {
-            "prev_state":"q2",
-            "value":"1",
-            "next_state":["q4"]
+            "prev_state": "q2",
+            "value": "1",
+            "next_state": ["q4"]
         },
         {
-            "prev_state":"q3",
-            "value":"0",
-            "next_state":[]
+            "prev_state": "q3",
+            "value": "0",
+            "next_state": []
         },
         {
-            "prev_state":"q3",
-            "value":"1",
-            "next_state":[]
+            "prev_state": "q3",
+            "value": "1",
+            "next_state": []
         },
         {
-            "prev_state":"q4",
-            "value":"0",
-            "next_state":[]
+            "prev_state": "q4",
+            "value": "0",
+            "next_state": []
         },
         {
-            "prev_state":"q4",
-            "value":"1",
-            "next_state":[]
+            "prev_state": "q4",
+            "value": "1",
+            "next_state": []
         }
-    ],
-    "Estado_Inicial": "q0",
-    "Estados_Aceptacion": ["q2","q3","q4"],
-    "Nombre": "No se"
+    ]
 }

@@ -1,0 +1,37 @@
+{
+    "Nombre": "#Par de A\u00b4s",
+    "Estados": [
+        "q0",
+        "q1"
+    ],
+    "Alfabeto": [
+        "a",
+        "b"
+    ],
+    "Estado_Inicial": "q0",
+    "Estados_Aceptacion": [
+        "q0"
+    ],
+    "Transiciones": [
+        {
+            "prev_state": "q0",
+            "value": "a",
+            "next_state": "q1"
+        },
+        {
+            "prev_state": "q0",
+            "value": "b",
+            "next_state": "q0"
+        },
+        {
+            "prev_state": "q1",
+            "value": "b",
+            "next_state": "q1"
+        },
+        {
+            "prev_state": "q1",
+            "value": "a",
+            "next_state": "q0"
+        }
+    ]
+}
